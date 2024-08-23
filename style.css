@@ -45,6 +45,18 @@ body {
     width: 5vw;
 }
 
+#left-container p {
+    color: #fff;
+    position: absolute;
+    bottom: 1vh;
+    align-self: center;
+}
+
+#left-container a {
+    color: #fff;
+    text-decoration:underline;
+}
+
 #right-container {
     background-color: #f2f2f2;
 }
@@ -120,7 +132,7 @@ button {
     margin-bottom: 10px;
     font-size: 1.1em;
     background-color: #596D48;
-    color: #fff;
+    color: #fff;;
     border: 0;
     border-radius: 5px;
     box-shadow: 0 0 2px black;
