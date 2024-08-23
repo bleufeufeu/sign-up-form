@@ -7,36 +7,55 @@
         <title>Sign Up Form</title>
     </head>
     <body>
-        <div class="left-container">
+        <div id="left-container">
             <div class="logo">
                 <img src="/static/images/odin-logo.png">
                 ODIN
             </div>
         </div>
 
-        <div>
+        <div id="right-container">
+            <div id="top-part">
+                <h1>
+                    This is a completely real product. Super duper real. You need to sign up for this immediately. You just have to.
+                </h1>
+            </div>
+
             <form>
-                <h1>Let's Do This!</h1>
+                <div id="middle-part">
+                    <h1>Let's do it!</h1>
+                        <div class="form">
+                            <div>
+                                <label for="firstname">FIRST NAME</label>
+                                <input type="text" id="firstname" name="f_name" required>
+                            </div>
+                            <div>
+                                <label for="lastname">LAST NAME</label>
+                                <input type="text" id="lastname" name="l_name" required>
+                            </div>
+                            <div>
+                                <label for="mail">EMAIL</label>
+                                <input type="email" id="mail" name="user_email" required>
+                            </div>
+                            <div>
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone" name="user_phone" required>
+                            </div>
+                            <div>
+                                <label for="pass">PASSWORD</label>
+                                <input type="password" id="pass" name="user_pass" minlength="8" required>
+                            </div>
+                            <div>
+                                <label for="passconfirm">CONFIRM PASSWORD</label>
+                                <input type="password" id="passconfirm" name="user_passconfirm" minlength="8" required>
+                            </div>
+                        </div>
+                </div>
 
-                <label for="firstname">First name</label>
-                <input type="text" id="firstname" name="f_name" required>
-
-                <label for="lastname">Last name</label>
-                <input type="text" id="lastname" name="l_name" required>
-
-                <label for="mail">Email</label>
-                <input type="email" id="mail" name="user_email" required>
-
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="user_phone" required>
-
-                <label for="pass">Password</label>
-                <input type="password" id="pass" name="user_pass" required>
-
-                <label for="passconfirm">Confirm Password</label>
-                <input type="password" id="passconfirm" name="user_passconfirm" required>
-
-                <button type="submit">Create Account</button>
+                <div id="bottom-part">
+                    <button type="submit">CREATE ACCOUNT</button>
+                    <p> Already have an account? <a href="https://youtu.be/dQw4w9WgXcQ">Log in</a></p>
+                </div>
             </form>
         </div>
     </body>

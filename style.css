@@ -1,5 +1,8 @@
 * {
     margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -11,7 +14,7 @@ body {
     display: flex;
 }
 
-.left-container {
+#left-container {
     background-image: url("static/images/froggy.jpg");
     background-size: cover;
     background-position: center;
@@ -19,7 +22,7 @@ body {
     flex-direction: column;
     align-items: start;
     height: 100vh;
-    width: 40vw;
+    min-width: 40vw;
 }
 
 .logo {
@@ -29,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13rem;
+    font-size: 5vw;
     font-weight: bold;
     color: #fff;
     font-family: SankofaDisplay;
@@ -39,6 +42,87 @@ body {
 }
 
 .logo img {
-    width: 200px
+    width: 5vw;
 }
 
+#right-container {
+    background-color: #f2f2f2;
+}
+
+#right-container > div {
+    padding: 30px 40px;
+}
+
+#top-part {
+    display: flex;
+    align-items: center;
+    min-height: 25vh;
+    margin-right: 30%;
+}
+
+#middle-part {
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 2px 0.5px 3px black;
+}
+
+#middle-part h1 {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    font-size: 1em;
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #e5e7ebfb;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+input:focus {
+    outline: 1px solid rgb(118, 203, 231);
+    box-shadow: 0 0 2px black;
+}
+
+input:user-valid {
+    outline: 1px solid rgb(38, 201, 38);
+}
+
+input:user-invalid {
+    outline: 1px solid red;
+}
+
+label {
+    font-size: 0.9em;
+}
+
+#bottom-part {
+    padding: 20px 40px;
+}
+
+button {
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    background-color: #596D48;
+    color: #fff;;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 2px black;
+
+}
